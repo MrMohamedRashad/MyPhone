@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_2/Feature/Home_screan/ui/login.dart';
 import 'package:flutter_application_2/Feature/Home_screan/ui/sign_up.dart';
 import 'package:flutter_application_2/Feature/Home_screan/ui/customs/widgets.dart';
-import 'package:flutter_application_2/utils/app_assets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class Welcome extends StatelessWidget {

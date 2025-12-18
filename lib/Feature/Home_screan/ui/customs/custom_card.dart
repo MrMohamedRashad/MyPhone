@@ -17,7 +17,9 @@ void increas (){
   num ++ ;
 }
 void decreas (){
-  num -- ;
+if(num >=0){
+  num--;
+}
 }
 
 class _CustomcardState extends State<Customcard> {
