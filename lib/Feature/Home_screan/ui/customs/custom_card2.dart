@@ -23,12 +23,16 @@ class Customcard2 extends StatefulWidget {
   @override
   State<Customcard2> createState() => _Customcard2State();
 }
-int num=0;
-void increas (){
-  num ++ ;
+
+int num = 0;
+void increas() {
+  num++;
 }
-void decreas (){
-  num -- ;
+
+void decreas() {
+  if (num > 0) {
+    num--;
+  }
 }
 
 class _Customcard2State extends State<Customcard2> {
