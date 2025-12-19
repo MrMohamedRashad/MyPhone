@@ -12,14 +12,16 @@ class Customcard extends StatefulWidget {
   @override
   State<Customcard> createState() => _CustomcardState();
 }
-int num =0;
-void increas (){
-  num ++ ;
+
+int num = 0;
+void increas() {
+  num++;
 }
-void decreas (){
-if(num >=0){
-  num--;
-}
+
+void decreas() {
+  if (num >0) {
+    num--;
+  }
 }
 
 class _CustomcardState extends State<Customcard> {
@@ -106,11 +108,12 @@ class _CustomcardState extends State<Customcard> {
                                 border: Border.all(color: Colors.black),
                               ),
 
-                              child: InkWell(onTap: () {
-                                setState(() {
-                                  decreas();
-                                });
-                              },
+                              child: InkWell(
+                                onTap: () {
+                                  setState(() {
+                                    decreas();
+                                  });
+                                },
                                 child: Icon(
                                   Icons.remove,
                                   size: 17.sp,
