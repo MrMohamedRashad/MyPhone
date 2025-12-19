@@ -156,6 +156,7 @@ class _LoginState extends State<Login> {
                             status = val!;
                           });
                         },
+
                         shape: BeveledRectangleBorder(
                           borderRadius: BorderRadiusGeometry.circular(-1.r),
                         ),
@@ -203,6 +204,16 @@ class _LoginState extends State<Login> {
                       ),
                       color: Color(0xff6B4C36),
                       onPressed: () {
+                        if (!status) {
+                          ScaffoldMessenger.of(context).showSnackBar(
+                            SnackBar(
+                              content: Text(
+                                'I agree to the terms and conditions',
+                              ),
+                            ),
+                          );
+                          return;
+                        }
                         if (formState.currentState!.validate()) {
                           Navigator.of(context).push(
                             MaterialPageRoute(
