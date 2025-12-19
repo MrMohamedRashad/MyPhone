@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
         create: (context) => AppCubit(),
         child: MaterialApp(
           debugShowCheckedModeBanner: false,
-          title: 'Flutter Demo',
+          title: 'MyPhone',
           theme: ThemeData(
             colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           ),
