@@ -56,7 +56,7 @@ class _MyhomeState extends State<Myhome> {
                         itemBuilder: (context, index) {
                           return Customcard(
                             onTap: () {
-                              Navigator.of(context, rootNavigator: true).push(
+                              Navigator.of(context).push(
                                 MaterialPageRoute(
                                   builder: (context) => Product(),
                                 ),
